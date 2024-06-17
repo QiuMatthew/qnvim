@@ -3,7 +3,8 @@
 This is my personal configuration for neovim, mainly based on kickstart.nvim but I refactored it to improve maintainability.Feel free to use it!
 ## Installation
 ### Install Neovim
-
+See their official site (https://neovim.io/)
+Or use package manager to install (e.g. homebrew on mac)
 ### Install Dependencies
 - git
 - make
