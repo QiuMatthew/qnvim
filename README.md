@@ -32,3 +32,9 @@ if you are using `powershell`
 ```bash
 git clone https://github.com/QiuMatthew/qnvim.git $env:USERPROFILE\AppData\Local\nvim\
 ```
+## Getting Started
+Just start neovim and wait for the installation to complete.
+```
+nvim
+```
+That's it, enjoy!
