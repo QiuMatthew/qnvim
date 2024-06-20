@@ -8,6 +8,18 @@ require("telescope").setup({
 	--   },
 	-- },
 	-- pickers = {}
+	defaults = {
+		-- https://github.com/catppuccin/nvim/discussions/323?sort=top#discussioncomment-8653291
+		sorting_strategy = "ascending",
+		layout_strategy = "flex",
+		layout_config = {
+			horizontal = { preview_cutoff = 80, preview_width = 0.55 },
+			vertical = { mirror = true, preview_cutoff = 25 },
+			prompt_position = "top",
+			width = 0.87,
+			height = 0.80,
+		},
+	},
 	extensions = {
 		["ui-select"] = {
 			require("telescope.themes").get_dropdown(),
@@ -21,6 +33,7 @@ pcall(require("telescope").load_extension, "ui-select")
 
 -- See `:help telescope.builtin`
 local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[F]ind [H]elp" })
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "[F]ind [F]iles" })
 vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "[F]ind current [W]ord" })
 vim.keymap.set("n", "<leader>fp", builtin.live_grep, { desc = "[F]ind in [P]roject" })
