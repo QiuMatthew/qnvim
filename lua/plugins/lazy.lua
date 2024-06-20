@@ -179,8 +179,6 @@ require("lazy").setup({
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black" },
-				javascript = { { "prettierd", "prettier" } },
 			},
 		},
 	},
