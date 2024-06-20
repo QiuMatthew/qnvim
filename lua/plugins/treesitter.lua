@@ -4,11 +4,4 @@ require("nvim-treesitter.configs").setup({
 
 	highlight = { enable = true },
 	indent = { enable = true },
-
-	-- colorful parentheses, brackets and braces
-	rainbow = {
-		enable = true,
-		extended_mode = true,
-		max_file_lines = nil,
-	},
 })
