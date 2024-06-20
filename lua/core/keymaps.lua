@@ -18,5 +18,3 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "go to next [D]iagn
 -- plugins
 -- neo-tree
 vim.keymap.set("n", "<leader>e", ":Neotree reveal=true toggle=true position=left <CR>")
-
-
