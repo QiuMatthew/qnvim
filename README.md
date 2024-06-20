@@ -38,3 +38,7 @@ Just start neovim and wait for the installation to complete.
 nvim
 ```
 That's it, enjoy!
+## Keybinds
+Key mapping is highly customizable, I basically adopt the default settings from plugin authors.
+### 
+
