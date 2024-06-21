@@ -44,6 +44,15 @@ function RunCode()
 		vim.cmd("w")
 		local output = vim.fn.systemlist("go run " .. vim.fn.shellescape(vim.fn.expand("%")))
 		show_in_floating_window(output)
+	elseif vim.bo.filetype == "cpp" then
+		vim.cmd("w")
+		local compile_info = vim.fn.systemlist("g++ " .. vim.fn.shellescape(vim.fn.expand("%")))
+		if compile_info == "" then -- error
+			show_in_floating_window(compile_info)
+		else
+			local output = vim.fn.systemlist("./a.out")
+			show_in_floating_window(output)
+		end
 	else
 		print("FileType Not Supported. Currently Support: Python, Golang")
 	end
