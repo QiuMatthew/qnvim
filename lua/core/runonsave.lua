@@ -70,3 +70,10 @@ vim.api.nvim_create_user_command("RunOnSave", function()
 
 	attach_to_buffer(tonumber(buffer), pattern, run_command, compile_command)
 end, {})
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ros",
+	":RunOnSave<CR>",
+	{ desc = "[R]un current code [O]n [S]ave, open a new window to monitor" }
+)
