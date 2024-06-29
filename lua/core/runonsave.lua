@@ -24,8 +24,6 @@ local attach_to_buffer = function(buffer, pattern, run_command, compile_command)
 				})
 			end
 
-			vim.api.nvim_open_win(buffer, false, { split = "right" })
-
 			if compile_command then
 				-- if compilation is needed
 				vim.api.nvim_buf_set_lines(buffer, 0, -1, false, { "=======Compile Start=======" })
@@ -53,6 +51,7 @@ end
 vim.api.nvim_create_user_command("RunOnSave", function()
 	print("AutoRun Starts Now...")
 	local buffer = vim.api.nvim_create_buf(false, true)
+	vim.api.nvim_open_win(buffer, false, { split = "right" })
 	local pattern, compile_command, run_command
 	if vim.bo.filetype == "python" then
 		pattern = "*.py"
@@ -71,9 +70,4 @@ vim.api.nvim_create_user_command("RunOnSave", function()
 	attach_to_buffer(tonumber(buffer), pattern, run_command, compile_command)
 end, {})
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<leader>ros",
-	":RunOnSave<CR>",
-	{ desc = "[R]un current code [O]n [S]ave, open a new window to monitor" }
-)
+vim.api.nvim_set_keymap("n", "<leader>ros", ":RunOnSave<CR>", { desc = "[R]un current code [O]n [S]ave" })
