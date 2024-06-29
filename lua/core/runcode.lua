@@ -53,5 +53,5 @@ vim.api.nvim_set_keymap(
 	"n",
 	"<leader>rc",
 	":ua RunCode()<CR>G$o==========Execution Finished==========<ESC>",
-	{ noremap = true, silent = true, desc = "run current code file" }
+	{ noremap = true, silent = true, desc = "[R]un current [C]ode file" }
 )
