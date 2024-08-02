@@ -28,6 +28,7 @@ local function load_plugins()
 	vim.list_extend(plugins, require("plugins.conform"))
 	vim.list_extend(plugins, require("plugins.leetcode"))
 	vim.list_extend(plugins, require("plugins.autopairs"))
+	vim.list_extend(plugins, require("plugins.obsidian"))
 	return plugins
 end
 
