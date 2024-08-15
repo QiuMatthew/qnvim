@@ -1,8 +1,8 @@
-require("core.options")
-require("core.keymaps")
-require("core.misc")
-require("core.autocommands")
-require("core.runonsave")
-require("core.runcode")
+-- Core configurations
+require("core.options") -- line number, indentation, etc
+require("core.keymaps") -- core keymaps, excluding plugins
+require("core.misc") -- other settings, language
+require("core.autocommands") -- user configured autocommands
 
-require("plugins.lazy")
+-- Plugins
+require("plugins.lazy") -- use lazy to manage all plugins

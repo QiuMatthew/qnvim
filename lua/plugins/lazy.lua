@@ -17,19 +17,19 @@ local function load_plugins()
 	vim.list_extend(plugins, require("plugins.theme"))
 	vim.list_extend(plugins, require("plugins.todo-comments"))
 	vim.list_extend(plugins, require("plugins.neo-tree"))
+	vim.list_extend(plugins, require("plugins.tmux-navigation"))
 	vim.list_extend(plugins, require("plugins.comment"))
 	vim.list_extend(plugins, require("plugins.gitsigns"))
-	vim.list_extend(plugins, require("plugins.tmux-navigation"))
-	vim.list_extend(plugins, require("plugins.which-key"))
-	vim.list_extend(plugins, require("plugins.treesitter"))
-	vim.list_extend(plugins, require("plugins.telescope"))
-	vim.list_extend(plugins, require("plugins.lsp"))
-	vim.list_extend(plugins, require("plugins.cmp"))
-	vim.list_extend(plugins, require("plugins.conform"))
-	vim.list_extend(plugins, require("plugins.leetcode"))
 	vim.list_extend(plugins, require("plugins.autopairs"))
-	vim.list_extend(plugins, require("plugins.obsidian"))
+	vim.list_extend(plugins, require("plugins.which-key"))
+	vim.list_extend(plugins, require("plugins.treesitter")) -- syntax highlight
+	vim.list_extend(plugins, require("plugins.telescope")) -- fuzzy finder
+	vim.list_extend(plugins, require("plugins.lsp")) -- lsp related
+	vim.list_extend(plugins, require("plugins.cmp")) -- auto complete
+	vim.list_extend(plugins, require("plugins.conform")) -- auto format
+	vim.list_extend(plugins, require("plugins.leetcode"))
 	vim.list_extend(plugins, require("plugins.competitest"))
+	vim.list_extend(plugins, require("plugins.obsidian"))
 	return plugins
 end
 

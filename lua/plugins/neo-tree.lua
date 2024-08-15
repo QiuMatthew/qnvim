@@ -8,5 +8,8 @@ return {
 			"nvim-tree/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 		},
+		configure = {
+			vim.keymap.set("n", "<leader>e", ":Neotree reveal=true toggle=true position=left <CR>"),
+		},
 	},
 }
