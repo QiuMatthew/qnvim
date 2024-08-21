@@ -90,18 +90,20 @@ return {
 						end
 					end, { "i", "s" }),
 
-					["<Tab>"] = cmp.mapping(function(fallback)
-						if luasnip.expand_or_locally_jumpable() then
-							luasnip.expand_or_jump()
+					["<Tab>"] = cmp.mapping(function()
+						if luasnip.locally_jumpable() then
+							luasnip.jump(1)
 						else
-							fallback()
+							-- fallback()
+							vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n", true)
 						end
 					end, { "i", "s" }),
-					["<S-Tab>"] = cmp.mapping(function(fallback)
+					["<S-Tab>"] = cmp.mapping(function()
 						if luasnip.locally_jumpable(-1) then
 							luasnip.jump(-1)
 						else
-							fallback()
+							-- fallback()
+							vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n", true)
 						end
 					end, { "i", "s" }),
 
