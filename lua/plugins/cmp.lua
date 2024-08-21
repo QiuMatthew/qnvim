@@ -90,22 +90,22 @@ return {
 						end
 					end, { "i", "s" }),
 
-					["<Tab>"] = cmp.mapping(function()
-						if luasnip.locally_jumpable() then
-							luasnip.jump(1)
-						else
-							-- fallback()
-							vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n", true)
-						end
-					end, { "i", "s" }),
-					["<S-Tab>"] = cmp.mapping(function()
-						if luasnip.locally_jumpable(-1) then
-							luasnip.jump(-1)
-						else
-							-- fallback()
-							vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n", true)
-						end
-					end, { "i", "s" }),
+					-- ["<Tab>"] = cmp.mapping(function()
+					-- 	if luasnip.locally_jumpable() then
+					-- 		luasnip.jump(1)
+					-- 	else
+					-- 		-- fallback()
+					-- 		vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n", true)
+					-- 	end
+					-- end, { "i", "s" }),
+					-- ["<S-Tab>"] = cmp.mapping(function()
+					-- 	if luasnip.locally_jumpable(-1) then
+					-- 		luasnip.jump(-1)
+					-- 	else
+					-- 		-- fallback()
+					-- 		vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n", true)
+					-- 	end
+					-- end, { "i", "s" }),
 
 					-- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
 					--    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
