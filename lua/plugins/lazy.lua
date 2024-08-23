@@ -21,6 +21,7 @@ local function load_plugins()
 	vim.list_extend(plugins, require("plugins.tmux-navigation"))
 	vim.list_extend(plugins, require("plugins.comment"))
 	vim.list_extend(plugins, require("plugins.gitsigns"))
+	vim.list_extend(plugins, require("plugins.gitblame"))
 	vim.list_extend(plugins, require("plugins.autopairs"))
 	vim.list_extend(plugins, require("plugins.which-key"))
 	vim.list_extend(plugins, require("plugins.treesitter")) -- syntax highlight
