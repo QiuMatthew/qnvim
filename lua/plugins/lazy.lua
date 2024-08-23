@@ -15,6 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 local function load_plugins()
 	local plugins = {}
 	vim.list_extend(plugins, require("plugins.theme"))
+	vim.list_extend(plugins, require("plugins.lualine"))
 	vim.list_extend(plugins, require("plugins.todo-comments"))
 	vim.list_extend(plugins, require("plugins.neo-tree"))
 	vim.list_extend(plugins, require("plugins.tmux-navigation"))
