@@ -9,9 +9,9 @@ return {
 					py = "~/Projects/CompetitiveProgramming/Templates/template.py",
 				},
 			})
-			vim.keymap.set("n", "<leader>cr", ":CompetiTest run")
-			vim.keymap.set("n", "<leader>cp", ":CompetiTest receive problem")
-			vim.keymap.set("n", "<leader>cc", ":CompetiTest receive contest")
+			vim.keymap.set("n", "<leader>cr", ":CompetiTest run<CR>")
+			vim.keymap.set("n", "<leader>cp", ":CompetiTest receive problem<CR>")
+			vim.keymap.set("n", "<leader>cc", ":CompetiTest receive contest<CR>")
 		end,
 	},
 }
