@@ -21,5 +21,10 @@ return {
 				translate_problems = true, ---@type boolean
 			},
 		},
+		configure = {
+			vim.keymap.set("n", "<leader>lr", ":Leet run<CR>"),
+			vim.keymap.set("n", "<leader>lt", ":Leet test<CR>"),
+			vim.keymap.set("n", "<leader>ls", ":Leet submit<CR>"),
+		},
 	},
 }
