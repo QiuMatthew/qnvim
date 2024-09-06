@@ -15,10 +15,16 @@ return {
 		},
 		opts = {
 			-- configuration goes here
+			arg = "leetcode", -- run `nvim leetcode` to launch
+
 			cn = { -- leetcode.cn
 				enabled = false, ---@type boolean
 				translator = true, ---@type boolean
 				translate_problems = true, ---@type boolean
+			},
+
+			storage = {
+				home = "~/Projects/LeetCode/nvim", -- where to save all written code
 			},
 		},
 		configure = {
