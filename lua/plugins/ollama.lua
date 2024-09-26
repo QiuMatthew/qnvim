@@ -27,7 +27,7 @@ return {
 
 	---@type Ollama.Config
 	opts = {
-		model = "codeqwen",
+		model = "codeqwen:latest",
 		url = "http://127.0.0.1:11434",
 		serve = {
 			on_start = false,
@@ -41,7 +41,7 @@ return {
 			Sample_Prompt = {
 				prompt = "This is a sample prompt that receives $input and $sel(ection), among others.",
 				input_label = "> ",
-				model = "codeqwen",
+				model = "codeqwen:latest",
 				action = "display",
 			},
 		},

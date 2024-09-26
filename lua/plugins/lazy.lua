@@ -32,8 +32,9 @@ local function load_plugins()
 	vim.list_extend(plugins, require("plugins.leetcode"))
 	vim.list_extend(plugins, require("plugins.competitest"))
 	vim.list_extend(plugins, require("plugins.obsidian"))
-	vim.list_extend(plugins, require("plugins.ollama"))
-	vim.list_extend(plugins, require("plugins.gen"))
+	-- vim.list_extend(plugins, require("plugins.ollama"))
+	-- vim.list_extend(plugins, require("plugins.gen"))
+	-- vim.list_extend(plugins, require("plugins.cmp-ai"))
 	return plugins
 end
 

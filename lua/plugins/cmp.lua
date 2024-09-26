@@ -27,6 +27,7 @@ return {
 			--  into multiple repos for maintenance purposes.
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-path",
+			-- "tzachar/cmp-ai",
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -114,6 +115,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
 					{ name = "path" },
+					-- { name = "cmp_ai" },
 				},
 			})
 		end,
