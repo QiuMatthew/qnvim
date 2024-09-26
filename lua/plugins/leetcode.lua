@@ -15,7 +15,7 @@ return {
 		},
 		opts = {
 			-- configuration goes here
-			arg = "leetcode", -- run `nvim leetcode` to launch
+			arg = "leet", -- run `nvim leetcode` to launch
 
 			cn = { -- leetcode.cn
 				enabled = false, ---@type boolean
