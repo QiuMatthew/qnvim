@@ -14,9 +14,15 @@ return {
 					},
 					lualine_x = {
 						"filename",
+					},
+					lualine_y = {
 						"encoding",
 						"fileformat",
 						"filetype",
+					},
+					lualine_z = {
+						"progress",
+						"location",
 					},
 				},
 			})
