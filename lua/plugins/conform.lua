@@ -25,16 +25,15 @@ return {
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				-- cpp = { "clang-format" },
+				cpp = { "my_cpp_formatter" },
 				go = { "goimports-reviser" },
 			},
-			-- formatters = {
-			-- 	clang_format = {
-			-- 		env = {
-			-- 			style = "{UseTab: Always, IndentWidth: 4, TabWidth: 4}",
-			-- 		},
-			-- 	},
-			-- },
+			formatters = {
+				my_cpp_formatter = {
+					command = "clang-format",
+					args = '--style="{BasedOnStyle: Google, UseTab: Always, IndentWidth: 4, TabWidth: 4}"',
+				},
+			},
 		},
 	},
 }
