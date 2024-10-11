@@ -26,7 +26,10 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				cpp = { "my_cpp_formatter" },
-				go = { "goimports-reviser" },
+				go = {
+					"gofmt",
+					-- "goimports-reviser",
+				},
 			},
 			formatters = {
 				my_cpp_formatter = {
