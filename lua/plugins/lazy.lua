@@ -31,7 +31,7 @@ local function load_plugins()
 	vim.list_extend(plugins, require("plugins.conform")) -- auto format
 	vim.list_extend(plugins, require("plugins.leetcode"))
 	vim.list_extend(plugins, require("plugins.competitest"))
-	vim.list_extend(plugins, require("plugins.obsidian"))
+	-- vim.list_extend(plugins, require("plugins.obsidian"))
 	-- vim.list_extend(plugins, require("plugins.cinnamon"))
 	vim.list_extend(plugins, require("plugins.copilot"))
 	-- vim.list_extend(plugins, require("plugins.ollama"))
