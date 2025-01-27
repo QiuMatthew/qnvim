@@ -11,3 +11,10 @@ vim.keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 -- diagnostics
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "go to previous [D]iagnostic message" })
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "go to next [D]iagnostic message" })
+vim.keymap.set("n", "<leader>dd", function()
+	if not vim.diagnostic.is_enabled() then
+		vim.diagnostic.enable()
+	else
+		vim.diagnostic.enable(false)
+	end
+end, { desc = "toggle [D]iagnostics" })
