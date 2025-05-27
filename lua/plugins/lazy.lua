@@ -38,6 +38,7 @@ local function load_plugins()
 	-- vim.list_extend(plugins, require("plugins.gen"))
 	-- vim.list_extend(plugins, require("plugins.cmp-ai"))
 	-- vim.list_extend(plugins, require("plugins.luarocks"))
+	vim.list_extend(plugins, require("plugins.avante"))
 	return plugins
 end
 
