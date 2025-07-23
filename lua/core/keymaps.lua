@@ -18,3 +18,8 @@ vim.keymap.set("n", "<leader>dd", function()
 		vim.diagnostic.enable(false)
 	end
 end, { desc = "toggle [D]iagnostics" })
+
+-- github
+vim.keymap.set("n", "<leader>gh", function()
+	require("core.github").open_github_file()
+end, { desc = "open current file in [G]it[H]ub browser" })
