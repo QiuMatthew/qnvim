@@ -23,3 +23,11 @@ end, { desc = "toggle [D]iagnostics" })
 vim.keymap.set("n", "<leader>gh", function()
 	require("core.github").open_github_file()
 end, { desc = "open current file in [G]it[H]ub browser" })
+
+vim.keymap.set("n", "<leader>gc", function()
+	require("core.github").open_github_commit()
+end, { desc = "open [G]it [C]ommit for current line in GitHub" })
+
+vim.keymap.set("n", "<leader>gp", function()
+	require("core.github").open_github_pr()
+end, { desc = "open [G]it [P]ull request for current line in GitHub" })
