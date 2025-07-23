@@ -40,5 +40,19 @@ nvim
 That's it, enjoy!
 ## Keybinds
 Key mapping is highly customizable, I basically adopt the default settings from plugin authors.
-### 
+
+### GitHub Integration
+Navigate directly from your code to GitHub pages:
+
+| Key | Description |
+|-----|-------------|
+| `<leader>gh` | Open current file in GitHub browser |
+| `<leader>gc` | Open GitHub commit page for current line |
+| `<leader>gp` | Open GitHub pull request page for current line |
+
+**Features:**
+- Works with both SSH and HTTPS GitHub remotes
+- Uses `git blame` to find the commit that last modified the current line
+- Automatically searches for associated pull requests
+- Opens pages at the exact line number you're viewing
 
