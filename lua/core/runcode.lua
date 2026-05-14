@@ -1,19 +1,7 @@
--- vim.keymap.set("n", "<leader>rc", ":w <bar> exec '!python3 '.shellescape('%')<CR>")
-
--- Function to create a floating window
+-- Open a scratch buffer in a right split and fill it with `output`.
 local function show_result(output)
 	local buf = vim.api.nvim_create_buf(false, true)
-	--[[ vim.api.nvim_buf_set_lines(
-		buf,
-		0,
-		-1,
-		false,
-		{ "==========Running " .. vim.fn.shellescape(vim.fn.expand("%")) .. "==========" }
-	) ]]
 	vim.api.nvim_buf_set_lines(buf, 0, -1, false, output)
-
-	-- local width = vim.o.columns - 10
-	-- local height = vim.o.lines - 10
 
 	vim.api.nvim_open_win(buf, true, {
 		split = "right",
@@ -44,7 +32,7 @@ function RunCode()
 			show_result(output)
 		end
 	else
-		print("FileType Not Supported. Currently Support: Python, Golang")
+		print("FileType not supported. Currently supports: Python, Go, C++")
 	end
 end
 

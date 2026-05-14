@@ -38,3 +38,6 @@ vim.opt.splitbelow = true
 
 -- max line length 80
 vim.opt.colorcolumn = "81"
+
+-- use English for messages and menus
+vim.cmd("language en_US")
