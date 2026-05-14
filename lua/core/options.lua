@@ -41,3 +41,12 @@ vim.opt.colorcolumn = "81"
 
 -- use English for messages and menus
 vim.cmd("language en_US")
+
+-- register Go template extensions so gopls attaches to them
+vim.filetype.add({
+	extension = {
+		gotmpl = "gotmpl",
+		tmpl = "gotmpl",
+		gohtml = "gotmpl",
+	},
+})
